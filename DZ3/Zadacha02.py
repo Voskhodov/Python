@@ -2,16 +2,7 @@
 # Пример:
 # - [2, 3, 4, 5, 6] => [12, 15, 16];
 # - [2, 3, 5, 6] => [12, 15]
-'''
-def dlb(lst: list) -> list:
-    count_dbl = (len(lst) + 1) // 2
-    res_list = [lst[i] * lst[-i - 1] for i in range(count_dbl)]
-    return res_list
 
-
-list_1 = [[2, 3, 4, 5], [2, 3, 4, 5, 6]]
-print(list(map(dlb, list_1)))
-'''
 list_1 = [[2, 3, 4, 5], [2, 3, 4, 5, 6]]
 '''
 list_2 = []
